@@ -5,9 +5,9 @@
     }
   },
   "devDependencies": {
-    "parcel": "^2.4.1"
+    "parcel": "2.4.1"
   },
   "dependencies": {
-    "@arcgis/core": "^4.23.7"
+    "@arcgis/core": "4.23.7"
   }
 }
