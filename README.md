@@ -6,26 +6,24 @@ Tested environment:
 
 - Ubuntu 20.04
 - Node 16.14.2
-- NPX 8.5.0
+- npm 8.5.0
 - Parcel 2.4.1
 - ArcGIS 4.23.7
 
-Running `parcel serve` works as expected. To test, use the following commands.
-An ArcGIS map component will be rendered when opening `http://localhost:1234`
-in a browser.
+Running `parcel serve` works as expected. An ArcGIS map component is rendered
+when using the following commands and browsing to `http://localhost:1234`:
 
     npm install
     npx parcel serve src/index.html
 
-Running `parcel build` and serving the result does not work as expected. To
-test, use the following commands. An ArcGIS map component will not be rendered
-when opening `http://localhost:1234` in a browser.
+Running `parcel build` does not work as expected. An ArcGIS map component is **not
+rendered** when using the following commands and browsing to `http://localhost:1234`:
 
     npm install
     npx parcel build src/index.html
     npx http-server -p 1234 dist/
 
-In this case the following errors appear in the browser console:
+Instead, the following errors appear in the browser console:
 
     Uncaught Error: Cannot find module '27Lyk'
       at i (index.32294b52.js:1:446)
